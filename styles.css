@@ -101,12 +101,13 @@
 }
 
 .app__result {
-    background-color: #eccece;
-    color:#440202;
+    background-color: #44cfbd;
+    color:black;
+    font-weight: bold;
   }
 
   .app__error {
     background-color: #f5edee;
-    color: #d32f2f;
+    color: #ec0505;
   }
  
