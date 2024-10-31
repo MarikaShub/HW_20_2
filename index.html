@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles.css">
-   <title>Document</title>
-</head>
-<body>
-   <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Star Wars</title>
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="app__title">
+        Узнай данные данные о персонажах, кораблях и не только!
+      </h1>
+      <div class="app__container">
+        <label for="entity" class="app__label">
+          <select id="entity" class="app__select">
+            <option value="" disabled selected hidden>
+              Выберите про кого хотите узнать
+            </option>
+            <option value="people">Люди</option>
+            <option value="films">Фильмы</option>
+            <option value="planets">Планеты</option>
+            <option value="starships">Космические корабли</option>
+          </select>
+        </label>
+        <label for="symbol" class="app__label">Введите идентификатор (1-10):</label>
+        <input
+          type="number"
+          id="symbol"
+          class="app__input"
+          min="1"
+          max="10"
+          placeholder="Например, 1"
+        />
+
+        <button id="searchButton" class="app__button">Поиск</button>
+
+        <div id="loading" class="app__loading">Загрузка</div>
+        <div id="result" class="app__result"></div>
+        <div id="error" class="app__error"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
